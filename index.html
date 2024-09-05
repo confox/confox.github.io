@@ -1,81 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Confox Projects</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.8;
+            background-color: #f4f7f6;
         }
+
         header {
-            background: #333;
+            background: linear-gradient(135deg, #3c3c3c, #1f1f1f);
             color: #fff;
-            padding: 10px 0;
+            padding: 60px 0;
             text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
+
         header h1 {
-            margin: 0;
-            font-size: 2.5rem;
+            font-size: 3rem;
+            margin-bottom: 10px;
+            font-weight: 600;
+            letter-spacing: 1px;
         }
+
+        header p {
+            font-size: 1.2rem;
+            font-weight: 300;
+            color: #aaa;
+        }
+
         section {
-            padding: 20px;
+            padding: 60px 20px;
         }
-        .repository {
-            margin: 20px 0;
-            padding: 15px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-        .repository h3 {
-            margin-top: 0;
-        }
-        footer {
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
             text-align: center;
-            padding: 10px 0;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .repository {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            padding: 25px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .repository:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .repository h3 {
+            font-weight: 600;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .repository p {
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .repository strong {
+            font-weight: 600;
+            color: #444;
+        }
+
+        .repository a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .repository a:hover {
+            color: #0056b3;
+        }
+
+        footer {
             background: #333;
             color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #0056b3;
         }
     </style>
 </head>
+
 <body>
 
-<header>
-    <h1>Confox Projects</h1>
-    <p>Showcasing the repositories and work of Confox on GitHub</p>
-</header>
+    <header>
+        <h1>Confox Projects</h1>
+        <p>Showcasing the repositories and work of Confox on GitHub</p>
+    </header>
 
-<section>
-    <h2>About Confox</h2>
-    <p>Confox is a collection of repositories on GitHub focused on various web development tools, themes, and resources. The repositories provide valuable resources for developers to enhance their projects with modern, responsive, and highly customizable themes.</p>
-</section>
+    <section>
+        <h2>About Confox</h2>
+        <p style="text-align:center; max-width: 800px; margin: 0 auto;">Confox is a collection of repositories on GitHub
+            focused on various web development tools, themes, and resources. The repositories provide valuable resources
+            for developers to enhance their projects with modern, responsive, and highly customizable themes.</p>
+    </section>
 
-<section>
-    <h2>Repositories</h2>
-    
-    <!-- Repository 1 -->
-    <div class="repository">
-        <h3><a href="https://github.com/confox/ByeBye" target="_blank">ByeBye script</a></h3>
-        <p>ByeBye is a Python script designed to securely delete and overwrite data on drives in a system. It provides a simple interface for users to select a drive and securely erase its contents, making the data unrecoverable.</p>
-        <p><strong>Languages:</strong> HTML, CSS</p>
-    </div>
-    
-    <!-- Repository 2 -->
-    <div class="repository">
-        <h3><a href="https://github.com/confox/Project-NEXIS" target="_blank">Project-NEXIS</a></h3>
-        <p>Personal AI virtual assistant powered by advanced neural networks!</p>
-        <p><strong>Languages:</strong> HTML, CSS, JavaScript</p>
-    </div>
-    
-        
-    <!-- Add more repositories as needed -->
-</section>
+    <section>
+        <h2>Repositories</h2>
 
-<footer>
-    <p>© 2024 Turkish | <a href="https://github.com/confox" target="_blank" style="color: #fff;">Visit our GitHub</a></p>
-</footer>
+        <!-- Repository 1 -->
+        <div class="repository">
+            <h3><a href="https://github.com/confox/ByeBye" target="_blank">ByeBye Script</a></h3>
+            <p>ByeBye is a Python script designed to securely delete and overwrite data on drives in a system. It
+                provides a simple interface for users to select a drive and securely erase its contents, making the data
+                unrecoverable.</p>
+            <p><strong>Languages:</strong> Python</p>
+        </div>
+
+        <!-- Repository 2 -->
+        <div class="repository">
+            <h3><a href="https://github.com/confox/Project-NEXIS" target="_blank">Project-NEXIS</a></h3>
+            <p>Project NEXIS is a personal AI virtual assistant powered by advanced neural networks. It offers a suite of
+                features that assist users with scheduling, reminders, and more.</p>
+            <p><strong>Languages:</strong> HTML, CSS, JavaScript</p>
+        </div>
+
+        <!-- Add more repositories as needed -->
+    </section>
+
+    <footer>
+        <p>© 2024 Confox | <a href="https://github.com/confox" target="_blank">Visit our GitHub</a></p>
+    </footer>
 
 </body>
+
 </html>
