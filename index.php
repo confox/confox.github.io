@@ -177,7 +177,7 @@
         <h1>Confox Projects</h1>
         <p>Showcasing the repositories and work of Confox on GitHub</p>
     </header>
-
+    <?php include 'header.php'; ?>
     <section>
         <h2>About Confox</h2>
         <p class="about-text">Confox is a collection of open-source projects on GitHub, focusing on modern web
@@ -216,9 +216,7 @@
 
     </section>
 
-    <footer>
-        <p>© 2024 Confox | <a href="https://github.com/confox" target="_blank">Visit our GitHub</a></p>
-    </footer>
+    <?php include 'footer.php'; ?>
 
 </body>
 
