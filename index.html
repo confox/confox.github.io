@@ -12,17 +12,20 @@
 </head>
 
 <body>
-    <header>
-        <nav>
+    <nav>
+        <div class="nav-inner">
             <span class="nav-logo">confox</span>
             <div class="nav-links">
-                <a href="https://github.com/confox" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://twitter.com/TurkishDW" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="https://d4rkwolf.co.uk" target="_blank">d4rkwolf.co.uk</a>
+                <a href="https://github.com/confox" target="_blank" aria-label="GitHub" class="icon-link"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/TurkishDW" target="_blank" aria-label="Twitter" class="icon-link"><i class="fab fa-twitter"></i></a>
+                <a href="https://d4rkwolf.co.uk" target="_blank" class="nav-site">d4rkwolf.co.uk <i class="fas fa-arrow-up-right-from-square"></i></a>
             </div>
-        </nav>
+        </div>
+    </nav>
 
+    <header>
         <div class="hero">
+            <img src="https://avatars.githubusercontent.com/u/16692293?v=4" alt="Turkish" class="hero-avatar">
             <div class="hero-badge">UK &middot; @D4rk-Wolf</div>
             <h1>Turkish</h1>
             <p class="hero-sub">Cybersecurity Researcher &amp; Solo Developer</p>
@@ -42,13 +45,13 @@
 
             <div class="featured-card">
                 <div class="featured-card-content">
-                    <div class="featured-badge">Live Tool</div>
+                    <div class="featured-badge">&#x25CF;&nbsp; Live Tool</div>
                     <h2>AI Document Generator</h2>
                     <p>A browser-based and installable desktop tool that helps you build the <strong>10 essential documents</strong> you should write before prompting an AI coding assistant. Structured inputs produce clean, copyable prompts for each document type.</p>
                     <div class="featured-meta">
-                        <span class="lang-tag"><span class="lang-dot js"></span> JavaScript</span>
-                        <span class="lang-tag"><i class="fab fa-react"></i> React 19</span>
-                        <span class="lang-tag"><i class="fas fa-desktop"></i> Tauri Desktop</span>
+                        <span class="lang-tag"><span class="lang-dot js"></span>JavaScript</span>
+                        <span class="lang-tag"><i class="fab fa-react"></i>React 19</span>
+                        <span class="lang-tag"><i class="fas fa-desktop"></i>Tauri Desktop</span>
                     </div>
                     <div class="featured-actions">
                         <a href="https://confox.github.io/AI-Document-Generator/" class="btn-primary" target="_blank">
@@ -61,17 +64,34 @@
                 </div>
 
                 <div class="featured-card-visual" aria-hidden="true">
-                    <div class="doc-grid">
-                        <div class="doc-item">01 PRD</div>
-                        <div class="doc-item">02 System Design</div>
-                        <div class="doc-item">03 UI/UX</div>
-                        <div class="doc-item">04 Features</div>
-                        <div class="doc-item">05 Master Prompt</div>
-                        <div class="doc-item">06 Data Model</div>
-                        <div class="doc-item">07 Security</div>
-                        <div class="doc-item">08 Testing</div>
-                        <div class="doc-item">09 DevOps</div>
-                        <div class="doc-item highlight">10 AGENTS.md</div>
+                    <div class="app-mock">
+                        <div class="app-mock-bar">
+                            <div class="app-mock-dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <span class="app-mock-title">AI Document Generator</span>
+                        </div>
+                        <div class="app-mock-body">
+                            <div class="app-mock-sidebar">
+                                <div class="mock-item active"><span class="mock-num">10</span>AGENTS.md</div>
+                                <div class="mock-item"><span class="mock-num">01</span>PRD</div>
+                                <div class="mock-item"><span class="mock-num">02</span>System Design</div>
+                                <div class="mock-item"><span class="mock-num">03</span>UI/UX</div>
+                                <div class="mock-item"><span class="mock-num">04</span>Features</div>
+                                <div class="mock-item"><span class="mock-num">05</span>Master Prompt</div>
+                                <div class="mock-item"><span class="mock-num">06</span>Data Model</div>
+                                <div class="mock-item"><span class="mock-num">07</span>Security</div>
+                            </div>
+                            <div class="app-mock-content">
+                                <div class="mock-line" style="width:82%"></div>
+                                <div class="mock-line" style="width:61%"></div>
+                                <div class="mock-line" style="width:90%"></div>
+                                <div class="mock-line" style="width:48%"></div>
+                                <div class="mock-line" style="width:74%"></div>
+                                <div class="mock-spacer"></div>
+                                <div class="mock-copy-btn"><i class="fas fa-copy"></i> Copy as Prompt</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -83,12 +103,12 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-header">
-                        <i class="fas fa-shield-halved project-icon"></i>
+                        <div class="project-icon-wrap"><i class="fas fa-shield-halved"></i></div>
                         <h3>ByeBye</h3>
                     </div>
                     <p>A Python script for securely deleting and overwriting data on drives. Simple interface to select a drive and make its contents completely unrecoverable.</p>
                     <div class="project-footer">
-                        <span class="lang-tag"><span class="lang-dot python"></span> Python</span>
+                        <span class="lang-tag"><span class="lang-dot python"></span>Python</span>
                         <a href="https://github.com/confox/ByeBye" class="project-link" target="_blank">
                             View on GitHub <i class="fas fa-arrow-right"></i>
                         </a>
