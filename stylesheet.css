@@ -285,16 +285,13 @@ main {
     border: 1px solid var(--accent-border);
     border-radius: var(--radius);
     padding: 48px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: center;
     position: relative;
     overflow: hidden;
     box-shadow:
         0 0 0 1px rgba(79, 142, 247, 0.06),
         0 24px 64px rgba(0, 0, 0, 0.45),
         0 0 80px rgba(79, 142, 247, 0.06);
+    max-width: 680px;
 }
 
 .featured-card::before {
@@ -423,122 +420,6 @@ main {
     transform: translateY(-2px);
 }
 
-/* ── App Mock ── */
-
-.app-mock {
-    background: var(--surface-2);
-    border: 1px solid var(--border);
-    border-radius: 11px;
-    overflow: hidden;
-    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
-}
-
-.app-mock-bar {
-    background: var(--surface);
-    padding: 10px 14px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    border-bottom: 1px solid var(--border);
-}
-
-.app-mock-dots {
-    display: flex;
-    gap: 6px;
-    flex-shrink: 0;
-}
-
-.app-mock-dots span {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-}
-
-.app-mock-dots span:nth-child(1) { background: #ff5f57; }
-.app-mock-dots span:nth-child(2) { background: #febc2e; }
-.app-mock-dots span:nth-child(3) { background: #28c840; }
-
-.app-mock-title {
-    font-family: var(--mono);
-    font-size: 0.68rem;
-    color: var(--text-muted);
-    flex: 1;
-    text-align: center;
-    padding-right: 26px;
-}
-
-.app-mock-body {
-    display: flex;
-    height: 290px;
-}
-
-.app-mock-sidebar {
-    width: 150px;
-    border-right: 1px solid var(--border);
-    padding: 8px 0;
-    flex-shrink: 0;
-    overflow: hidden;
-}
-
-.mock-item {
-    padding: 7px 12px;
-    font-family: var(--mono);
-    font-size: 0.67rem;
-    color: var(--text-muted);
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    white-space: nowrap;
-    overflow: hidden;
-}
-
-.mock-item.active {
-    background: var(--accent-dim);
-    color: var(--accent);
-    border-right: 2px solid var(--accent);
-}
-
-.mock-num {
-    font-size: 0.58rem;
-    opacity: 0.45;
-    min-width: 14px;
-    flex-shrink: 0;
-}
-
-.app-mock-content {
-    flex: 1;
-    padding: 18px 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    overflow: hidden;
-}
-
-.mock-line {
-    height: 7px;
-    background: var(--surface);
-    border-radius: 4px;
-    flex-shrink: 0;
-}
-
-.mock-spacer {
-    flex: 1;
-}
-
-.mock-copy-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 7px;
-    font-family: var(--mono);
-    font-size: 0.68rem;
-    color: var(--accent);
-    background: var(--accent-dim);
-    border: 1px solid var(--accent-border);
-    border-radius: 6px;
-    padding: 7px 12px;
-    align-self: flex-start;
-    flex-shrink: 0;
-}
 
 /* ── Projects Grid ── */
 
@@ -667,13 +548,7 @@ footer {
 
 @media (max-width: 880px) {
     .featured-card {
-        grid-template-columns: 1fr;
-        gap: 36px;
-        padding: 36px 28px;
-    }
-
-    .featured-card-visual {
-        display: none;
+        padding: 32px 24px;
     }
 }
 
