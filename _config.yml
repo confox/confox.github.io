@@ -1,21 +1,21 @@
 # Site Settings
 theme: jekyll-theme-minimal
-title: Confox's Homepage
-description: Bookmark this page to stay updated on my latest projects, developments, and tech explorations!
-url: "https://your-github-username.github.io" # Replace with your GitHub Pages URL
-baseurl: "" # For custom domain use, specify "/sub-directory" if your site is hosted in one
+title: Turkish — Confox
+description: Cybersecurity researcher and solo developer. Building tools at the intersection of security and AI.
+url: "https://confox.github.io"
+baseurl: ""
 
 # SEO and Social Meta Tags
-author: Confox
-email: your-email@example.com # Replace with your email address
+author: Turkish
+email: turkish@d4rkwolf.co.uk
 social_links:
   github: https://github.com/confox
-  twitter: https://twitter.com/your_twitter_handle # Add your Twitter handle if applicable
-  linkedin: https://linkedin.com/in/your_linkedin_profile # Add LinkedIn if applicable
+  twitter: https://twitter.com/TurkishDW
+  website: https://d4rkwolf.co.uk
 
 # Social Sharing
-twitter_username: your_twitter_handle # Add your Twitter handle here if you want Twitter card integration
-github_username: confox # Your GitHub username
+twitter_username: TurkishDW
+github_username: confox
 show_excerpts: true # Option to show excerpts in listings
 
 # Appearance
